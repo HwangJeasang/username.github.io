@@ -70,7 +70,7 @@
             width: 300px;
             margin-right: 20px;
         }
-        .video-thumbnail img {
+        .video-thumbnail video {
             width: 100%;
             height: auto;
         }
@@ -100,7 +100,6 @@
             display: none;
         }
 
-        /* 반응형 디자인을 위한 미디어 쿼리 */
         @media (max-width: 768px) {
             .header {
                 flex-direction: column;
@@ -111,19 +110,19 @@
                 margin-bottom: 10px;
             }
             .video-thumbnail {
-                width: 90%; /* 모바일 화면에 맞춰 썸네일 크기 조정 */
+                width: 90%;
                 margin-right: 0;
-                margin-bottom: 20px; /* 썸네일 간 간격 조정 */
+                margin-bottom: 20px;
             }
             .container {
                 flex-direction: column;
                 align-items: center;
             }
             .marquee {
-                height: 40px; /* 모바일에서 높이 조정 */
+                height: 40px;
             }
             .title {
-                font-size: 20px; /* 모바일에서 제목 크기 조정 */
+                font-size: 20px;
             }
         }
     </style>
@@ -143,24 +142,26 @@
     <div class="container-wrapper">
         <div class="container">
             <div class="video-thumbnail">
-                <a href="동영상링크1">
-                    <img src="썸네일이미지주소1" alt="교육과정 과목 설명영상 1">
-                    <p>교육과정 과목 설명영상 - 1</p>
-                </a>
+                <video controls>
+                    <source src="https://drive.google.com/file/d/1zS2KaWZarnFAZwizlQYXa51hesDIMN-3/view?usp=sharing" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>교육과정 과목 설명영상 - 1</p>
             </div>
             <div class="video-thumbnail">
-                <a href="동영상링크2">
-                    <img src="썸네일이미지주소2" alt="교육과정 과목 설명영상 2">
-                    <p>교육과정 과목 설명영상 - 2</p>
-                </a>
+                <video controls>
+                    <source src="비디오파일주소2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>교육과정 과목 설명영상 - 2</p>
             </div>
             <div class="video-thumbnail">
-                <a href="동영상링크3">
-                    <img src="썸네일이미지주소3" alt="교육과정 과목 설명영상 3">
-                    <p>교육과정 과목 설명영상 - 3</p>
-                </a>
+                <video controls>
+                    <source src="비디오파일주소3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>교육과정 과목 설명영상 - 3</p>
             </div>
-            <!-- 추가 영상 썸네일을 여기에 추가할 수 있습니다. -->
         </div>
     </div>
     <div class="footer">
