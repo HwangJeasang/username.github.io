@@ -1,12 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화홍고등학교 교육과정 지원단</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .marquee {
+            width: 100%;
+            background-color: #CCCCCC;
+            color: #333333;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            height: 50px; /* Increase the height of the marquee */
+            display: flex;
+            align-items: center;
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 200%;
+            animation: marquee 30s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFFFFF;
+            padding: 20px 0;
+        }
+        .header img {
+            margin-right: 20px;
+            max-width: 100px;
+            max-height: 100px;
+            height: auto;
+            width: auto;
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .container-wrapper {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 20px;
+            flex: 1;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .video-thumbnail {
+            border: 2px solid #333333;
+            padding: 10px;
+            text-align: center;
+            width: 300px;
+            margin-right: 20px;
+        }
+        .video-thumbnail img {
+            width: 100%;
+            height: auto;
+        }
+        .video-thumbnail p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .no-capture {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+        .footer {
+            background-color: #CCCCCC;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
-<body>
-  <p>Hello, World!</p>
+<body class="no-capture">
+    <div class="marquee">
+        <span>교육과정 박람회 | 7월 17일 화홍고등학교 교육과정 박람회 | 7월 17일 교육과정 박람회 | 7월 17일 화홍고등학교 교육과정 박람회 | 7월 17일</span>
+    </div>
+    <div class="header">
+        <img src="로고이미지주소" alt="화홍고등학교 로고">
+        <h1>화홍고등학교 교육과정 지원단</h1>
+    </div>
+    <div class="title">
+        영상보기
+    </div>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="video-thumbnail">
+                <a href="동영상링크1">
+                    <img src="썸네일이미지주소1" alt="교육과정 과목 설명영상 1">
+                    <p>교육과정 과목 설명영상 - 1</p>
+                </a>
+            </div>
+            <div class="video-thumbnail">
+                <a href="동영상링크2">
+                    <img src="썸네일이미지주소2" alt="교육과정 과목 설명영상 2">
+                    <p>교육과정 과목 설명영상 - 2</p>
+                </a>
+            </div>
+            <div class="video-thumbnail">
+                <a href="동영상링크3">
+                    <img src="썸네일이미지주소3" alt="교육과정 과목 설명영상 3">
+                    <p>교육과정 과목 설명영상 - 3</p>
+                </a>
+            </div>
+            <!-- 추가 영상 썸네일을 여기에 추가할 수 있습니다. -->
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024. 화홍고등학교 교육과정 지원단. All rights reserved.
+    </div>
 </body>
 </html>
