@@ -3,138 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>화홍고등학교 교육과정 지원단</title>
+    <title>뭐지 프리미엄</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            color: #333333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .marquee {
-            width: 100%;
-            background-color: #CCCCCC;
-            color: #333333;
-            overflow: hidden;
-            white-space: nowrap;
-            box-sizing: border-box;
-            height: 50px;
-            display: flex;
-            align-items: center;
-        }
-        .marquee span {
-            display: inline-block;
-            padding-left: 200%;
-            animation: marquee 30s linear infinite;
-        }
-        @keyframes marquee {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(-100%, 0); }
-        }
-        .header {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #FFFFFF;
-            padding: 20px 0;
-        }
-        .title {
-            text-align: center;
-            font-size: 24px;
-            margin: 20px 0;
-        }
-        .container-wrapper {
-            overflow-x: auto;
-            white-space: nowrap;
-            padding: 20px;
-            flex: 1;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
         }
         .container {
-            display: flex;
-            justify-content: center;
-        }
-        .video-thumbnail {
-            border: 2px solid #333333;
-            padding: 10px;
             text-align: center;
-            width: 300px;
-            margin-right: 20px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .video-thumbnail iframe {
-            width: 100%;
-            height: auto;
+        .container h1 {
+            margin-bottom: 20px;
         }
-        .video-thumbnail p {
-            margin-top: 10px;
-            font-weight: bold;
-        }
-        .no-capture {
-            user-select: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-        }
-        .footer {
-            background-color: #CCCCCC;
-            text-align: center;
-            padding: 10px;
-        }
-
-        /* 반응형 디자인을 위한 미디어 쿼리 */
-        @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                text-align: center;
-            }
-            .video-thumbnail {
-                width: 90%; /* 모바일 화면에 맞춰 썸네일 크기 조정 */
-                margin-right: 0;
-                margin-bottom: 20px; /* 썸네일 간 간격 조정 */
-            }
-            .container {
-                flex-direction: column;
-                align-items: center;
-            }
-            .marquee {
-                height: 40px; /* 모바일에서 높이 조정 */
-            }
-            .title {
-                font-size: 20px; /* 모바일에서 제목 크기 조정 */
-            }
+        .container p {
+            margin: 0;
         }
     </style>
 </head>
-<body class="no-capture">
-    <div class="marquee">
-        <span>7월 17일 화홍고등학교 교육과정 박람회 | 7월 17일 화홍고등학교 교육과정 박람회 | 7월 17일 화홍고등학교 교육과정 박람회</span>
-    </div>
-    <div class="header">
-        <h1>화홍고등학교 교육과정 지원단</h1>
-    </div>
-    <div class="title">
-        영상보기
-    </div>
-    <div class="container-wrapper">
-        <div class="container">
-            <div class="video-thumbnail">
-                <iframe src="https://www.youtube.com/embed/rytgyyl22bA" frameborder="0" allowfullscreen></iframe>
-                <p>교육과정 과목 설명영상 - 1</p>
-            </div>
-            <div class="video-thumbnail">
-                <iframe src="https://www.youtube.com/embed/rytgyyl22bA" frameborder="0" allowfullscreen></iframe>
-                <p>교육과정 과목 설명영상 - 2</p>
-            </div>
-            <div class="video-thumbnail">
-                <iframe src="https://www.youtube.com/embed/rytgyyl22bA" frameborder="0" allowfullscreen></iframe>
-                <p>교육과정 과목 설명영상 - 3</p>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        &copy; 2024. 화홍고등학교 교육과정 지원단. All rights reserved.
+<body>
+    <div class="container">
+        <h1>화홍고등학교 교육과정 지원단 페이지는 현재 재단장 중..</h1>
+        <p>더 나은 뭐지 서비스를 제공하기 위해 재단장을 하고 있어요. 조금만 기다려 주세요!</p>
     </div>
 </body>
 </html>
