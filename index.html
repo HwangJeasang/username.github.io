@@ -41,13 +41,6 @@
             background-color: #FFFFFF;
             padding: 20px 0;
         }
-        .header img {
-            margin-right: 20px;
-            max-width: 100px;
-            max-height: 100px;
-            height: auto;
-            width: auto;
-        }
         .title {
             text-align: center;
             font-size: 24px;
@@ -70,7 +63,7 @@
             width: 300px;
             margin-right: 20px;
         }
-        .video-thumbnail video {
+        .video-thumbnail iframe {
             width: 100%;
             height: auto;
         }
@@ -89,51 +82,36 @@
             text-align: center;
             padding: 10px;
         }
-        .blackout {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: black;
-            z-index: 1000;
-            display: none;
-        }
 
+        /* 반응형 디자인을 위한 미디어 쿼리 */
         @media (max-width: 768px) {
             .header {
                 flex-direction: column;
                 text-align: center;
             }
-            .header img {
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
             .video-thumbnail {
-                width: 90%;
+                width: 90%; /* 모바일 화면에 맞춰 썸네일 크기 조정 */
                 margin-right: 0;
-                margin-bottom: 20px;
+                margin-bottom: 20px; /* 썸네일 간 간격 조정 */
             }
             .container {
                 flex-direction: column;
                 align-items: center;
             }
             .marquee {
-                height: 40px;
+                height: 40px; /* 모바일에서 높이 조정 */
             }
             .title {
-                font-size: 20px;
+                font-size: 20px; /* 모바일에서 제목 크기 조정 */
             }
         }
     </style>
 </head>
 <body class="no-capture">
-    <div class="blackout" id="blackout"></div>
     <div class="marquee">
-        <span>화홍고등학교 교육과정 박람회 | 7월 17일 | 화홍고등학교 교육과정 박람회 | 7월 17일 | 화홍고등학교 교육과정 박람회 | 7월 17일</span>
+        <span>교육과정 박람회 | 7월 17일 화홍고등학교 교육과정 박람회 | 7월 17일 교육과정 박람회 | 7월 17일 화홍고등학교 교육과정 박람회 | 7월 17일</span>
     </div>
     <div class="header">
-        <img src="https://lh3.google.com/u/0/d/1uWzC6ZQ9fnoAubDPw0vjwg33w6cKufLn=w2880-h1364-iv1" alt="화홍고등학교 로고">
         <h1>화홍고등학교 교육과정 지원단</h1>
     </div>
     <div class="title">
@@ -142,24 +120,15 @@
     <div class="container-wrapper">
         <div class="container">
             <div class="video-thumbnail">
-                <video controls>
-                    <source src="비디오 주소" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <iframe src="https://www.youtube.com/embed/동영상ID1" frameborder="0" allowfullscreen></iframe>
                 <p>교육과정 과목 설명영상 - 1</p>
             </div>
             <div class="video-thumbnail">
-                <video controls>
-                    <source src="비디오파일주소2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <iframe src="https://www.youtube.com/embed/동영상ID2" frameborder="0" allowfullscreen></iframe>
                 <p>교육과정 과목 설명영상 - 2</p>
             </div>
             <div class="video-thumbnail">
-                <video controls>
-                    <source src="비디오파일주소3.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <iframe src="https://www.youtube.com/embed/동영상ID3" frameborder="0" allowfullscreen></iframe>
                 <p>교육과정 과목 설명영상 - 3</p>
             </div>
         </div>
@@ -167,29 +136,5 @@
     <div class="footer">
         &copy; 2024. 화홍고등학교 교육과정 지원단. All rights reserved.
     </div>
-
-    <script>
-        document.addEventListener('visibilitychange', function() {
-            var blackout = document.getElementById('blackout');
-            if (document.hidden) {
-                blackout.style.display = 'block';
-            } else {
-                blackout.style.display = 'none';
-            }
-        });
-
-        window.addEventListener('keydown', function(event) {
-            if (event.key === 'PrintScreen') {
-                event.preventDefault();
-                var blackout = document.getElementById('blackout');
-                blackout.style.display = 'block';
-            }
-        });
-
-        window.addEventListener('keyup', function(event) {
-            var blackout = document.getElementById('blackout');
-            blackout.style.display = 'none';
-        });
-    </script>
 </body>
 </html>
